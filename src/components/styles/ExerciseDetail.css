@@ -1,0 +1,19 @@
+.exercise-detail {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: black;
+}
+
+.exercise-detail-item {
+  margin: 6px 0;
+  padding: 2px;
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+

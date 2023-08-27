@@ -1,0 +1,32 @@
+.button-group {
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: #007bff;
+  color: white;
+}

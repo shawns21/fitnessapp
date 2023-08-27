@@ -1,0 +1,120 @@
+.exercises-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.exercise-list {
+  width: 100%;
+}
+
+.exercise-entry {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-bottom: 10px;
+}
+
+.exercise-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.exercise-name {
+  font-weight: bold;
+}
+
+.details-button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.details-button:hover {
+  background-color: #ddd;
+}
+
+.hide-button {
+  background-color: #f0f0f0;
+  color: #888;
+}
+
+.view-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #1e7e34;
+}
+
+.seperator {
+  height: 1px;
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+.details-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}

@@ -53,7 +53,10 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
     <div className="button-component">
       <div className="button-group">
         <p onClick={toggleDifficultyOptions} className="filter-title">
-          Difficulty
+          <div className="tagTitle">
+            <p>Difficulty</p>
+            <span class="arrow"></span>
+          </div>
         </p>
         {showDifficultyOptions && (
           <div className="options">
@@ -75,7 +78,10 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
       </div>
       <div className="button-group">
         <p onClick={toggleMuscleOptions} className="filter-title">
-          Muscle
+           <div className="tagTitle">
+            <p>Muscle</p>
+            <span class="arrow"></span>
+          </div>
         </p>
         {showMuscleOptions && (
           <div className="options">
@@ -95,7 +101,10 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
       </div>
       <div className="button-group">
         <p onClick={toggleTypeOptions} className="filter-title">
-          Type
+           <div className="tagTitle">
+            <p>Type</p>
+            <span class="arrow"></span>
+          </div>
         </p>
         {showTypeOptions && (
           <div className="options">

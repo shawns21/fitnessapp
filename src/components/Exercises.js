@@ -19,26 +19,44 @@ const Exercises = () => {
     const exerciseData = {
       method: 'GET',
       url: 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises',
-      params: {name: `${searchTerm}`, difficulty: `${exerciseDifficulty}`, muscle: `${exerciseMuscle}`, type: `${exerciseType}` },
+      params: {name: `${searchTerm}`},
       headers: {
         'X-RapidAPI-Key': '31572d2061mshe3469ce2d83480dp1d5232jsn187abbe9e10e',
         'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
       }
     };
 
+    updateTags();
     updateList(exerciseData);
     resetExerciseDetails();
+  }
+
+  const searchWithTags = async () => {
+
+      const exerciseData = {
+        method: 'GET',
+        url: 'https://exercises-by-api-ninjas.p.rapidapi.com/v1/exercises',
+        params: {name: `${searchTerm}`, difficulty: `${exerciseDifficulty}`, muscle: `${exerciseMuscle}`, type: `${exerciseType}`},
+        headers: {
+          'X-RapidAPI-Key': '31572d2061mshe3469ce2d83480dp1d5232jsn187abbe9e10e',
+          'X-RapidAPI-Host': 'exercises-by-api-ninjas.p.rapidapi.com'
+        }
+      };
+
+    updateList(exerciseData);
+    resetExerciseDetails();
+
+  }
+
+  const updateTags = () => {
+    setExerciseDifficulty("");
+    setExerciseMuscle("");
+    setExerciseType("");
   }
 
   const resetExerciseDetails = () => {
     setShowDetails(new Array(exerciseList.length).fill(false));
   };
-
-  const resetParams = () => {
-    setExerciseDifficulty("");
-    setExerciseMuscle("");
-    setExerciseType("");
-  }
 
   const addIntoWorkout = (exercise) => {
     addExercise(exercise);
@@ -87,6 +105,7 @@ const Exercises = () => {
           exerciseMuscle={exerciseMuscle}
           exerciseType={exerciseType}
         />
+        <button onClick={() => searchWithTags()}>Apply Tags</button>
       </div>
       <div className="exercise-list">
         {exerciseList.map((exercise, index) => (

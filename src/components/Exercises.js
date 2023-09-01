@@ -82,16 +82,27 @@ const Exercises = () => {
     setExerciseType(type);
   }
 
+  const handleClear = () => {
+    setSearchTerm('');
+  };
+
   return (
     <div className="exercises-container">
       <div className="search-bar">
-        <input
-          className="search-input"
-          type="text"
-          value={searchTerm}
-          onChange={(event) => setSearchTerm(event.target.value)}
-          placeholder="Enter a keyword, like 'push'"
-        />
+         <div className="search-input-container">
+          <input
+            className="search-input"
+            type="text"
+            value={searchTerm}
+            onChange={(event) => setSearchTerm(event.target.value)}
+            placeholder="Enter a keyword, like 'push'"
+          />
+          {searchTerm && (
+            <button className="clear-button" onClick={handleClear}>
+              &times;
+            </button>
+          )}
+        </div>
         <button className="search-button" onClick={searchExercise}>
           Search
         </button>
@@ -105,7 +116,7 @@ const Exercises = () => {
           exerciseMuscle={exerciseMuscle}
           exerciseType={exerciseType}
         />
-        <button onClick={() => searchWithTags()}>Apply Tags</button>
+        <button className="add-button" onClick={() => searchWithTags()}>Apply Tags</button>
       </div>
       <div className="exercise-list">
         {exerciseList.map((exercise, index) => (

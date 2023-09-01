@@ -14,6 +14,8 @@ const Exercises = () => {
   const [exerciseMuscle, setExerciseMuscle] = useState(""); 
   const [exerciseType, setExerciseType] = useState("");
 
+  const [showOptions, setShowOptions] = useState(true);
+
   const searchExercise = async () => {
 
     const exerciseData = {
@@ -108,14 +110,20 @@ const Exercises = () => {
         </button>
       </div>
       <div className="filter-section">
-        <ButtonComponent
-          handleExerciseDifficulty={handleExerciseDifficulty}
-          handleExerciseMuscle={handleExerciseMuscle}
-          handleExerciseType={handleExerciseType}
-          exerciseDifficulty={exerciseDifficulty}
-          exerciseMuscle={exerciseMuscle}
-          exerciseType={exerciseType}
-        />
+        <div className='title'>
+          <p className='filterSectionTitle'>Filter</p>
+          <span className={`arrow ${showOptions ? 'up-arrow' : 'down-arrow'}`} onClick={() => setShowOptions(!showOptions)}></span>
+        </div>
+        {showOptions && (
+          <ButtonComponent
+            handleExerciseDifficulty={handleExerciseDifficulty}
+            handleExerciseMuscle={handleExerciseMuscle}
+            handleExerciseType={handleExerciseType}
+            exerciseDifficulty={exerciseDifficulty}
+            exerciseMuscle={exerciseMuscle}
+            exerciseType={exerciseType}
+          />
+        )}
         <button className="add-button" onClick={() => searchWithTags()}>Apply Tags</button>
       </div>
       <div className="exercise-list">

@@ -30,7 +30,7 @@
 .clear-button {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 20px;
   transform: translateY(-50%);
   padding: 0;
   background: none;
@@ -59,9 +59,58 @@
   background-color: #0056b3;
 }
 
-.filter-section {
-  margin-bottom: 20px;
+.title {
+  background-color: green;
 }
+
+.filter-section {
+  background-color: red;
+}
+
+.filterSectionTitle {
+  font-size: large;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.arrow {
+  background-color: black;
+  padding: 20px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+  border-width: 3px 3px 0;
+  position: absolute;
+  top: 50%; /* Adjust this to control the spacing */
+  right: -12px;
+  transform: translateX(-50%) rotate(180deg); /* Rotate the arrow 180 degrees to make it face up */
+}
+
+.up-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+  border-width: 3px 3px 0;
+  position: absolute;
+  top: 50%; /* Adjust this to control the spacing */
+  right: -12px;
+  transform: translateX(-50%) rotate(180deg); /* Rotate the arrow 180 degrees to make it face up */
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #000 transparent transparent transparent;
+  border-width: 3px 3px 0;
+  position: absolute;
+  top: 50%;
+  right: -12px; /* Adjust this to control the spacing */
+  transform: translateX(-50%);
+}
+
 
 .exercise-list {
   width: 100%;

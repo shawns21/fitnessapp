@@ -8,23 +8,6 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
 
   const typeOptions = ['cardio', 'olympic_weightlifting', 'plyometrics', 'powerlifting', 'strength', 'stretching', 'strongman'];
 
-  const [showDifficultyOptions, setShowDifficultyOptions] = useState(true);
-  const [showMuscleOptions, setShowMuscleOptions] = useState(true);
-  const [showTypeOptions, setShowTypeOptions] = useState(true);
-
-
-  const toggleDifficultyOptions = () => {
-    setShowDifficultyOptions(!showDifficultyOptions);
-  };
-
-  const toggleMuscleOptions = () => {
-    setShowMuscleOptions(!showMuscleOptions);
-  };
-
-  const toggleTypeOptions = () => {
-    setShowTypeOptions(!showTypeOptions);
-  };
-
   const toggleMuscleOption = (muscle) => {
     if (exerciseMuscle === muscle) {
       handleExerciseMuscle("");
@@ -52,13 +35,10 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
    return (
     <div className="button-component">
       <div className="button-group">
-        <p onClick={toggleDifficultyOptions} className="filter-title">
-          <div className="tagTitle">
-            <p>Difficulty</p>
-            <span class="arrow"></span>
-          </div>
-        </p>
-        {showDifficultyOptions && (
+        <div className="filter-title">
+          <p>Difficulty</p>
+        </div>
+        {(
           <div className="options">
             {difficultyOptions.map(difficulty => (
               <button
@@ -77,13 +57,10 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
         )}
       </div>
       <div className="button-group">
-        <p onClick={toggleMuscleOptions} className="filter-title">
-           <div className="tagTitle">
-            <p>Muscle</p>
-            <span class="arrow"></span>
-          </div>
-        </p>
-        {showMuscleOptions && (
+        <div className="filter-title">
+          <p>Muscle</p>
+        </div>
+        {(
           <div className="options">
             {muscleOptions.map(muscle => (
               <button
@@ -100,13 +77,10 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
         )}
       </div>
       <div className="button-group">
-        <p onClick={toggleTypeOptions} className="filter-title">
-           <div className="tagTitle">
-            <p>Type</p>
-            <span class="arrow"></span>
-          </div>
-        </p>
-        {showTypeOptions && (
+        <div className="filter-title">
+          <p>Type</p>
+        </div>
+        {(
           <div className="options">
             {typeOptions.map(type => (
               <button

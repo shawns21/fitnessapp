@@ -21,6 +21,11 @@
   transition: background-color 0.2s;
 }
 
+.selected {
+  color: white;
+  background-color: #007bff;
+}
+
 .button:hover {
   background-color: #e0e0e0;
 }

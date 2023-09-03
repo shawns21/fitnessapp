@@ -24,6 +24,7 @@
   border: 1px solid black;
   border-radius: 5px;
   margin-right: 10px;
+  width: 25vw;
   flex-grow: 1;
 }
 
@@ -59,58 +60,23 @@
   background-color: #0056b3;
 }
 
-.title {
-  background-color: green;
-}
-
 .filter-section {
-  background-color: red;
+  width: 90vw;
 }
 
-.filterSectionTitle {
-  font-size: large;
+.showButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.arrow {
-  background-color: black;
-  padding: 20px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: #000 transparent transparent transparent;
-  border-width: 3px 3px 0;
-  position: absolute;
-  top: 50%; /* Adjust this to control the spacing */
-  right: -12px;
-  transform: translateX(-50%) rotate(180deg); /* Rotate the arrow 180 degrees to make it face up */
+.showButton:hover {
+  background-color: #0056b3;
 }
-
-.up-arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: #000 transparent transparent transparent;
-  border-width: 3px 3px 0;
-  position: absolute;
-  top: 50%; /* Adjust this to control the spacing */
-  right: -12px;
-  transform: translateX(-50%) rotate(180deg); /* Rotate the arrow 180 degrees to make it face up */
-}
-
-.down-arrow {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-color: #000 transparent transparent transparent;
-  border-width: 3px 3px 0;
-  position: absolute;
-  top: 50%;
-  right: -12px; /* Adjust this to control the spacing */
-  transform: translateX(-50%);
-}
-
 
 .exercise-list {
   width: 100%;

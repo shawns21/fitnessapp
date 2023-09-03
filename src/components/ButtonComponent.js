@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './styles/ButtonComponent.css';
 
-const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handleExerciseType, exerciseDifficulty, exerciseMuscle, exerciseType }) => {
+const ButtonComponent = ({searchWithTags, handleExerciseDifficulty, handleExerciseMuscle, handleExerciseType, exerciseDifficulty, exerciseMuscle, exerciseType }) => {
   const muscleOptions = ['abdominals', 'abductors', 'adductors', 'biceps', 'calves', 'chest', 'forearms', 'glutes', 'hamstrings', 'lats', 'lower_back', 'middle_back', 'neck', 'quadriceps', 'traps', 'triceps'];
 
   const difficultyOptions = ['beginner', 'intermediate', 'expert'];
@@ -96,6 +96,7 @@ const ButtonComponent = ({ handleExerciseDifficulty, handleExerciseMuscle, handl
           </div>
         )}
       </div>
+      <button className="add-button" onClick={() => searchWithTags()}>Apply Tags</button>
     </div>
   );
 };

@@ -16,7 +16,7 @@ You can save each workout to your own personal routine, and track the sets and r
 
 <br> <!-- Add an empty line for extra spacing -->
 
-![Alt Text](/images/fin.png)
+![Alt Text](/images/final.png)
 
 ## API Used:
 

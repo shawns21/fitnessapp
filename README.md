@@ -1,6 +1,6 @@
 # Workout Tracker Web App
 
-![Alt Text](/images/test1.png)
+![Alt Text](/images/front.png)
 
 ## About:
 

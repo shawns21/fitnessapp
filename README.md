@@ -8,13 +8,18 @@
 
 This app is used to search for popular exercises and save them in a workout routine. For each exercise, you can see its difficulty, muscle group, and instructions. Searching for certain tags can be done with a common phrase or certain tags used to sort exercises by certain parameters.
 
-## ![Alt Text](/images/mid.png)
+<br> <!-- Add an empty line for extra spacing -->
+
+![Alt Text](/images/mid.png)
 
 You can save each workout to your own personal routine, and track the sets and reps of each exercise. There is also a default routine for beginners.
+
+<br> <!-- Add an empty line for extra spacing -->
 
 ![Alt Text](/images/fin.png)
 
 ## API Used:
 
 https://api-ninjas.com/api/exercises
+
 

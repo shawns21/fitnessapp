@@ -12,7 +12,7 @@ This app is used to search for popular exercises and save them in a workout rout
 
 ![Alt Text](/images/mid.png)
 
-<span style="font-size: 40px;"> You can save each workout to your own personal routine, and track the sets and reps of each exercise. There is also a default routine for beginners.</span>
+You can save each workout to your own personal routine, and track the sets and reps of each exercise. There is also a default routine for beginners.
 
 <br> <!-- Add an empty line for extra spacing -->
 

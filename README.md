@@ -1,8 +1,8 @@
 # Workout Tracker Web App
 
-![Alt Text](/images/front.png)
-
 ## [Click To Visit](https://fitnessapp-c4d2b.web.app/)
+
+![Alt Text](/images/front.png)
 
 ## About:
 

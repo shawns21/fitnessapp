@@ -1,4 +1,6 @@
-# [Click To Visit](https://fitnessapp-c4d2b.web.app/)
+# Workout Tracker Web App
+
+[Click To Visit](https://fitnessapp-c4d2b.web.app/)
 
 ## About:
 
